@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <!-- Page title -->``
+    <!-- Page title -->
     <title>S&K - Wedding Invitation</title>
     <!--[if lt IE 9]>
     <script src="js/respond.js"></script>
@@ -29,6 +29,9 @@
     <!-- Color Style CSS -->
     <link href="styles/lavender.css" rel="stylesheet">
     <script src="js/anime.min.js"></script>
+    <script src="js/lazysizes.min"></script>
+
+
     <!-- Favicons-->
     <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
     <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
@@ -37,12 +40,12 @@
 </head>
 <body id="page-top" data-spy="scroll" data-target=".navbar-custom">
 <!-- Preloader -->
-<div id="preloader">
+<div id="preloader" style="display: none">
     <div class="spinner">
         <div class="bounce1"></div>
     </div>
     <div class="preloader-helper"> <span>
-            This site has a lot of images, and I've used a free host; So please wait for a while :P
+            This site has a lot of images, and I've used a free host; <br> So please be patient wait for a while :P
         </span> </div>
 
 </div>
@@ -57,7 +60,7 @@
             <div class="navbar-brand navbar-brand-centered page-scroll">
                 <a href="#page-top">
                     <!-- logo  -->
-                    <img src="img/logo.png" class="img-responsive" alt="">
+                    <img src="img/custom-logo.png" height="65" class="img-responsive" alt="">
                 </a>
             </div>
             <!--/navbar-brand -->
@@ -93,11 +96,12 @@
     <!-- Background blurred images -->
     <div class="photowall">
         <div class="col-md-4 margin1">
-            <img src="img-landing/landing-01.png" alt="" class="rotate1 img-photo img-responsive">
+<!--            <img data-src="image.jpg" class="lazyload" />-->
+            <img data-sizes="auto" src="img-landing/landing-dummy.png" data-src="img-landing/landing-01.png" alt="" class="rotate1 img-photo img-responsive lazyload">
         </div>
         <!-- /col-md-4 -->
         <div class="col-md-4  col-md-offset-4">
-            <img src="img-landing/landing-03.png" alt="" class="rotate2 img-photo img-responsive">
+            <img data-sizes="auto" src="img-landing/landing-dummy.png" data-src="img-landing/landing-03.jpg" alt="" class="rotate2 img-photo img-responsive lazyload">
         </div>
         <!-- /col-md-4 -->
     </div>
@@ -106,7 +110,7 @@
          data-100="margin-top:0px;transform: rotate(4deg);"
          data-center-center="margin-top:50px;transform: rotate(-10deg);">
         <!-- image-->
-        <img src="img-landing/landing-02.png" alt="" class="img-photo img-responsive">
+        <img data-sizes="auto" src="img-landing/landing-dummy.png" data-src="img-landing/landing-02.png" alt="" class="img-photo img-responsive lazyload">
     </div>
     <!--/main picture-->
     <div class="intro-heading col-md-12 text-center" data-0="opacity:1;"
@@ -200,13 +204,13 @@
         <!-- /section-heading-->
         <!-- Bride Info -->
         <div class="col-md-5 col-md-offset-1">
-            <img src="img-profiles/profile-styy.png" alt="" class="main-img img-responsive img-circle"/>
+            <img src="img-profiles/profile-groom.png" data-src="img-profiles/profile-styy.png" alt="" class="main-img img-responsive lazyload img-circle"/>
             <h4 class="text-ornament">Si Thu Ye Yint</h4>
         </div>
         <!-- /col-md-5 -->
         <!-- Groom Info -->
         <div class="col-md-5 res-margin">
-            <img src="img-profiles/profile-kppp.png" alt="" class="main-img img-responsive img-circle"/>
+            <img src="img-profiles/profile-bride.png" data-src="img-profiles/profile-kppp.png" alt="" class="main-img img-responsive lazyload img-circle"/>
             <h4 class="text-ornament text-ornament-long">Khine Pyae Pyae Phyo</h4>
         </div>
 
@@ -242,7 +246,7 @@
                     data-0="transform:translatey(0%);"
                     data-center="transform:translatey(0%);transform:rotate(-4deg)">
                     <a href="img-story/2010.png" data-gal="prettyPhoto[gallery]">
-                        <img alt="He fell in love with her since high school. " src="img-story/2010.png" class="img-responsive"/>
+                        <img alt="He fell in love with her since high school."  src="img-story/story-dummy.png" data-src="img-story/2010.png" class="img-responsive lazyload"/>
                         <span>2010</span>
                         <p>He fell in love with her since high school.</p>
                     </a>
@@ -252,7 +256,7 @@
                     data-0="transform:translatey(0%);"
                     data-center="transform:translatey(0%);transform:rotate(-4deg)">
                     <a href="img-story/2013.png" data-gal="prettyPhoto[gallery]">
-                        <img alt="The love story started at 2013 when she accepted his feelings." src="img-story/2013.png" class="img-responsive"/>
+                        <img alt="The love story started at 2013 when she accepted his feelings." src="img-story/story-dummy.png" data-src="img-story/2013.png" class="img-responsive lazyload"/>
                         <span>2013</span>
                         <p>The love story started at 2013 when she accepted his feelings.</p>
                     </a>
@@ -263,7 +267,7 @@
                     data-0="transform:translatey(0%);"
                     data-center="transform:translatey(0%);transform:rotate(-4deg)">
                     <a href="img-story/2014.png" data-gal="prettyPhoto[gallery]">
-                        <img alt="Young, dumb and deeply in love." src="img-story/2014.png" class="img-responsive"/>
+                        <img alt="Young, dumb and deeply in love." src="img-story/story-dummy.png" data-src="img-story/2014.png" class="img-responsive lazyload"/>
                         <span>2014</span>
                         <p>Young, dumb and deeply in love.</p>
                     </a>
@@ -274,7 +278,7 @@
                     data-0="transform:translatey(0%);"
                     data-center="transform:translatey(0%);transform:rotate(-4deg)">
                     <a href="img-story/2015.png" data-gal="prettyPhoto[gallery]">
-                        <img alt="Most of our friends are mutual as we are always together." src="img-story/2015.png" class="img-responsive"/>
+                        <img alt="Most of our friends are mutual as we are always together." src="img-story/story-dummy.png" data-src="img-story/2015.png" class="img-responsive lazyload"/>
                         <span>2015</span>
                         <p>Since we are almost always together, most of our friends are mutual.</p>
                     </a>
@@ -285,7 +289,7 @@
                     data-0="transform:translatey(0%);"
                     data-center="transform:translatey(0%);transform:rotate(-4deg)">
                     <a href="img-story/201502.png" data-gal="prettyPhoto[gallery]">
-                        <img alt="She likes shiny things, but she'd marry him with paper rings." src="img-story/201502.png" class="img-responsive"/>
+                        <img alt="She likes shiny things, but she'd marry him with paper rings." src="img-story/story-dummy.png" data-src="img-story/201502.png" class="img-responsive lazyload"/>
                         <span>2015</span>
                         <p>She likes shiny things, but she'd marry him with paper rings.</p>
                     </a>
@@ -296,7 +300,7 @@
                     data-0="transform:translatey(0%);"
                     data-center="transform:translatey(0%);transform:rotate(-4deg)">
                     <a href="img-story/2016.png" data-gal="prettyPhoto[gallery]">
-                        <img alt="She's in good term with his siblings, too." src="img-story/2016.png" class="img-responsive"/>
+                        <img alt="She's in good term with his siblings, too." src="img-story/story-dummy.png" data-src="img-story/2016.png" class="img-responsive lazyload"/>
                         <span>2016</span>
                         <p>She's in good term with his siblings, too.</p>
                     </a>
@@ -307,7 +311,7 @@
                     data-0="transform:translatey(0%);"
                     data-center="transform:translatey(0%);transform:rotate(-4deg)">
                     <a href="img-story/201602.png" data-gal="prettyPhoto[gallery]">
-                        <img alt="Trying to help the community together at interfaith and peace forums" src="img-story/201602.png" class="img-responsive"/>
+                        <img alt="Trying to help the community together at interfaith and peace forums" src="img-story/story-dummy.png" data-src="img-story/201602.png" class="img-responsive lazyload"/>
                         <span>2016</span>
                         <p>Trying to help the community together at interfaith and peace forums</p>
                     </a>
@@ -318,9 +322,9 @@
                     data-0="transform:translatey(0%);"
                     data-center="transform:translatey(0%);transform:rotate(-4deg)">
                     <a href="img-story/2017.png" data-gal="prettyPhoto[gallery]">
-                        <img alt="But we'd love to have fun together in EMD festivals, too." src="img-story/2017.png" class="img-responsive"/>
+                        <img alt="But we'd love to have fun together at EDM festivals, too." src="img-story/story-dummy.png" data-src="img-story/2017.png" class="img-responsive lazyload"/>
                         <span>2017</span>
-                        <p>But we'd love to have fun together in EMD festivals, too.</p>
+                        <p>But we'd love to have fun together at EDM festivals, too.</p>
                     </a>
                 </li>
 
@@ -329,7 +333,7 @@
                     data-0="transform:translatey(0%);"
                     data-center="transform:translatey(0%);transform:rotate(-4deg)">
                     <a href="img-story/201702.png" data-gal="prettyPhoto[gallery]">
-                        <img alt="Saving the world together, at the Earth Hour. " src="img-story/201702.png" class="img-responsive"/>
+                        <img alt="Saving the world together, at the Earth Hour. " src="img-story/story-dummy.png" data-src="img-story/201702.png" class="img-responsive lazyload"/>
                         <span>2017</span>
                         <p>Saving the world together, at the Earth Hour.</p>
                     </a>
@@ -340,7 +344,7 @@
                     data-0="transform:translatey(0%);"
                     data-center="transform:translatey(0%);transform:rotate(-4deg)">
                     <a href="img-story/201703.png" data-gal="prettyPhoto[gallery]">
-                        <img alt="The love birds among friends." src="img-story/201703.png" class="img-responsive"/>
+                        <img alt="The love birds among friends." src="img-story/story-dummy.png" data-src="img-story/201703.png" class="img-responsive lazyload"/>
                         <span>2017</span>
                         <p>The love birds among friends.</p>
                     </a>
@@ -351,7 +355,7 @@
                     data-0="transform:translatey(0%);"
                     data-center="transform:translatey(0%);transform:rotate(-4deg)">
                     <a href="img-story/2018.png" data-gal="prettyPhoto[gallery]">
-                        <img alt="Every adventure would feels like a picnic if we're together. " src="img-story/2018.png" class="img-responsive"/>
+                        <img alt="Every adventure would feels like a picnic if we're together. " src="img-story/story-dummy.png" data-src="img-story/2018.png" class="img-responsive lazyload"/>
                         <span>2018</span>
                         <p>Every adventure would feels like a picnic if we're together.</p>
                     </a>
@@ -362,7 +366,7 @@
                     data-0="transform:translatey(0%);"
                     data-center="transform:translatey(0%);transform:rotate(-4deg)">
                     <a href="img-story/2019.png" data-gal="prettyPhoto[gallery]">
-                        <img alt=" Always be there for each other." src="img-story/2019.png" class="img-responsive"/>
+                        <img alt=" Always be there for each other." src="img-story/story-dummy.png" data-src="img-story/2019.png" class="img-responsive lazyload"/>
                         <span>2019</span>
                         <p> Always be there for each other.</p>
                     </a>
@@ -373,7 +377,7 @@
                     data-0="transform:translatey(0%);"
                     data-center="transform:translatey(0%);transform:rotate(-4deg)">
                     <a href="img-story/2020.png" data-gal="prettyPhoto[gallery]">
-                        <img alt=" Distances can't separate us. " src="img-story/2020.png" class="img-responsive"/>
+                        <img alt=" Distances can't separate us. " src="img-story/story-dummy.png" data-src="img-story/2020.png" class="img-responsive lazyload"/>
                         <span>2020</span>
                         <p> Distances can't separate us.</p>
                     </a>
@@ -384,7 +388,7 @@
                     data-0="transform:translatey(0%);"
                     data-center="transform:translatey(0%);transform:rotate(-4deg)">
                     <a href="img-story/2020.png" data-gal="prettyPhoto[gallery]">
-                        <img alt="Just before Covid lockdown." src="img-story/2021.jpg" class="img-responsive"/>
+                        <img alt="Just before Covid lockdown." src="img-story/story-dummy.png" data-src="img-story/2021.jpg" class="img-responsive lazyload"/>
                         <span>2021</span>
                         <p>Just before Covid lockdown.</p>
                     </a>
@@ -395,7 +399,7 @@
                     data-0="transform:translatey(0%);"
                     data-center="transform:translatey(0%);transform:rotate(-4deg)">
                     <a href="img-story/2022.png" data-gal="prettyPhoto[gallery]">
-                        <img alt="At other people's weeding, a year before our wedding ... " src="img-story/2022.png" class="img-responsive"/>
+                        <img alt="At other people's weeding, a year before our wedding ... " src="img-story/story-dummy.png" data-src="img-story/2022.png" class="img-responsive lazyload"/>
                         <span>2022</span>
                         <p>Attended a wedding together, a year before our own.</p>
                     </a>
@@ -406,7 +410,7 @@
                     data-0="transform:translatey(0%);"
                     data-center="transform:translatey(0%);transform:rotate(-4deg)">
                     <a href="img-story/2023.png" data-gal="prettyPhoto[gallery]">
-                        <img alt="After passing all those years together, we've decided to officially tie the knot. " src="img-story/2023.png" class="img-responsive"/>
+                        <img alt="After passing all those years together, we've decided to officially tie the knot. " src="img-story/story-dummy.png" data-src="img-story/2023.png" class="img-responsive lazyload"/>
                         <span>2023</span>
                         <p>After passing all those years together, we've decided to officially tie the knot.</p>
                     </a>
@@ -436,7 +440,7 @@
             <div class="col-md-6" data--100-start="transform:translatey(-60%);"
                  data-center-bottom="transform:translatey(20%);">
                 <!-- image -->
-                <img src="img-process/proposal.png" alt="" class="img-photo rotate1 img-responsive">
+                <img src="img-process/process-dummy-2.png" data-src="img-process/proposal.png" alt="" class="img-photo rotate1 img-responsive lazyload">
             </div>
             <!-- paper well -->
             <div class="well col-md-6">
@@ -454,7 +458,7 @@
             <div class="well col-md-7">
                 <h5>Well he didn't wait long...</h5>
                 <p>
-                    After the proposal, he want to her parent's place together with his families to formally ask for her
+                    After the proposal, he went to her parent's place together with his families to formally ask for her
                     hand in marriage.
                 </p>
 
@@ -466,7 +470,7 @@
             <div class="col-md-5" data--100-start="transform:translatey(-60%);"
                  data-center-bottom="transform:translatey(20%);">
                 <!-- image -->
-                <img src="img-process/taungyann.jpg" alt="" class="img-photo rotate2 img-responsive">
+                <img  src="img-process/process-dummy-2.png" data-src="img-process/taungyann.jpg" alt="" class="img-photo rotate2 img-responsive lazyload">
             </div>
             <!-- /col-md-5 -->
         </div>
@@ -475,7 +479,7 @@
             <div class="col-md-6" data--100-start="transform:translatey(-60%);"
                  data-center-bottom="transform:translatey(20%);">
                 <!-- image -->
-                <img src="img-process/bridal-shower.png" alt="" class="img-photo rotate1 img-responsive">
+                <img  src="img-process/process-dummy-2.png" data-src="img-process/bridal-shower.png" alt="" class="img-photo rotate1 img-responsive lazyload">
             </div>
             <!-- paper well -->
             <div class="well col-md-6">
@@ -527,7 +531,7 @@
 <section id="quote" class="container-fluid margin1">
     <div class="col-md-7 col-centered" data-center-top="opacity: 1" data-center-bottom="opacity: 0">
         <blockquote>
-            <h2>Being deeply loved by someone gives you strength, while loving someone deeply gives you courage.</h2>
+
         </blockquote>
     </div>
     <!-- /col-md-7-->
@@ -560,7 +564,7 @@
                     <div class="pre-wedding col-lg-4 col-sm-6 col-md-6">
                         <div class="isotope-item">
                             <div class="gallery-thumb">
-                                <img class="img-responsive" src="img-gallery/prewed-0101.jpeg" alt="">
+                                <img class="img-responsive lazyload" src="img-story/story-dummy.png" data-src="img-gallery/prewed-0101.jpeg" alt="">
                                 <a href="img-gallery/prewed-0101.jpeg" data-gal="prettyPhoto[gallery]" title="">
                                     <span class="overlay-mask"></span>
                                 </a>
@@ -571,7 +575,7 @@
                     <div class="pre-wedding col-lg-4 col-sm-6 col-md-6">
                         <div class="isotope-item">
                             <div class="gallery-thumb">
-                                <img class="img-responsive" src="img-gallery/prewed-0201.jpg" alt="">
+                                <img class="img-responsive lazyload" src="img-story/story-dummy.png" data-src="img-gallery/prewed-0201.jpg" alt="">
                                 <a href="img-gallery/prewed-0201.jpg" data-gal="prettyPhoto[gallery]" title="">
                                     <span class="overlay-mask"></span>
                                 </a>
@@ -581,7 +585,7 @@
                     <div class="pre-wedding col-lg-4 col-sm-6 col-md-6">
                         <div class="isotope-item">
                             <div class="gallery-thumb">
-                                <img class="img-responsive" src="img-gallery/prewed-0102.jpg" alt="">
+                                <img class="img-responsive lazyload" src="img-story/story-dummy.png" data-src="img-gallery/prewed-0102.jpg" alt="">
                                 <a href="img-gallery/prewed-0102.jpg" data-gal="prettyPhoto[gallery]" title="">
                                     <span class="overlay-mask"></span>
                                 </a>
@@ -591,7 +595,7 @@
                     <div class="pre-wedding col-lg-4 col-sm-6 col-md-6">
                         <div class="isotope-item">
                             <div class="gallery-thumb">
-                                <img class="img-responsive" src="img-gallery/prewed-0301.jpeg" alt="">
+                                <img class="img-responsive lazyload" src="img-story/story-dummy.png" data-src="img-gallery/prewed-0301.jpeg" alt="">
                                 <a href="img-gallery/prewed-0301.jpeg" data-gal="prettyPhoto[gallery]" title="">
                                     <span class="overlay-mask"></span>
                                 </a>
@@ -602,7 +606,7 @@
                     <div class="pre-wedding col-lg-4 col-sm-6 col-md-6">
                         <div class="isotope-item">
                             <div class="gallery-thumb">
-                                <img class="img-responsive" src="img-gallery/prewed-0203.png" alt="">
+                                <img class="img-responsive lazyload" src="img-story/story-dummy.png" data-src="img-gallery/prewed-0203.png" alt="">
                                 <a href="img-gallery/prewed-0203.png" data-gal="prettyPhoto[gallery]" title="">
                                     <span class="overlay-mask"></span>
                                 </a>
@@ -612,7 +616,7 @@
                     <div class="pre-wedding col-lg-4 col-sm-6 col-md-6">
                         <div class="isotope-item">
                             <div class="gallery-thumb">
-                                <img class="img-responsive" src="img-gallery/prewed-0204.png" alt="">
+                                <img class="img-responsive lazyload" src="img-story/story-dummy.png" data-src="img-gallery/prewed-0204.png" alt="">
                                 <a href="img-gallery/prewed-0204.png" data-gal="prettyPhoto[gallery]" title="">
                                     <span class="overlay-mask"></span>
                                 </a>

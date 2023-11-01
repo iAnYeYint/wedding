@@ -252,7 +252,7 @@ i {
 /* Shrink navbar on scroll  */
 
 nav .navbar-brand img {
-    max-height: 130px;
+    max-height: 65px;
 }
 nav .navbar-toggle {
     margin: 13px 15px 13px 0;
