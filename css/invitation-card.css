@@ -108,6 +108,7 @@
     .book-content {
         background-size: calc(var(--book-height) / var(--book-ratio));
         background-image: url('./../img-invitation-card/card-03-base.png');
+
         transition: all 0.3s 1s;
         position: relative;;
     }
