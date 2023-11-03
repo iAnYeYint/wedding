@@ -112,7 +112,7 @@ $(window).load(function() {
 
     $("a[data-gal^='prettyPhoto']").prettyPhoto({
         hook: 'data-gal'
-    });
+    })
     ({
         animation_speed: 'normal',
         opacity: 1,
