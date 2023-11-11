@@ -48,8 +48,8 @@ $(document).ready(function() {
         loop:true,
         touchDrag:true,
         mouseDrag:true,
-        autoplay: true,
-        autoplayTimeout: 5000,
+        // autoplay: true,
+        // autoplayTimeout: 5000,
         nav: true,
 		  navText: [
             "<i class='fa fa-chevron-left'></i>",
